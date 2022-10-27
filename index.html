@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="slides">
+        <input class="input" type="radio" name="slide" id="slide1" checked />
+        <input class="input" type="radio" name="slide" id="slide2" />
+        <input class="input" type="radio" name="slide" id="slide3" />
+        <input class="input" type="radio" name="slide" id="slide4" />
+        <input class="input" type="radio" name="slide" id="slide5" />
+
+        <div class="slide s1">
+          <img src="img/slide.1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/slide.3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/slide.4.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/slide.5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/slide.6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <label class="bar" for="slide1"></label>
+      <label class="bar" for="slide2"></label>
+      <label class="bar" for="slide3"></label>
+      <label class="bar" for="slide4"></label>
+      <label class="bar" for="slide5"></label>
+    </div>
+
+    <div class="hero">
+      <div class="music">
+        <p>Artist: The Dust Brothers</p>
+        <h1>What is Fight Club?</h1>
+        <audio
+          id="audio"
+          src="/audio/song.mp3"></audio>
+        <div id="playPause" class="play">
+          <img src="img/play.png" alt="" id="play" onclick="play()" />
+          <img src="img/pause.png" alt="" id="pause" onclick="pause()">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
